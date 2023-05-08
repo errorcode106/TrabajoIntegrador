@@ -1,0 +1,17 @@
+body
+{
+    background-color: gray;
+}
+
+
+.contenedor
+{
+    width: 80%;
+    margin: auto;
+    
+}
+
+
+.oscurecer-img{
+    filter: brightness(60%); // Más oscura
+  }
