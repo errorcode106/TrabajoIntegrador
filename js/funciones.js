@@ -1,10 +1,8 @@
 function calcular()
 {
     var cantidad=document.getElementById("cantidad").value;
-
     var seleccion=document.getElementById("seleccion");
     var seleccion_activa=seleccion.options[seleccion.selectedIndex].value;
-
     var resultado=0
 
     switch(seleccion_activa=parseInt(seleccion_activa))
@@ -26,6 +24,14 @@ function calcular()
             resultado= (200-(200*0.15))*cantidad;
             break;
     }  
-    
     document.getElementById("total").value=resultado;
+}
+
+function borrar()
+{
+    document.getElementById("cantidad").value=""
+    document.getElementById("total").value="";
+    document.getElementById("nombre").value="";
+    document.getElementById("apellido").value="";
+    document.getElementById("mail").value="";
 }

@@ -89,13 +89,13 @@
                     <div class="container overflow-hidden">
                         <div class="row g-0">
                             <div class="col-6 container-fluid">
-                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                                <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                             </div>
                             <div class="col-6 container-fluid">
-                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                                <input id ="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                             </div>
                             <div class="col-12 mt-3 container-fluid">
-                                <input type="text" class="form-control" placeholder="Correo" aria-label="mail">
+                                <input id="mail" type="text" class="form-control" placeholder="Correo" aria-label="mail">
                             </div>
                         </div>
                         <br>
@@ -132,9 +132,8 @@
                         <div class="row g-0">
                             <div class="col-6 container-fluid">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-warning text-white" type="button">
-                                        <h5>Borrar</h5>
-                                    </button>
+                                    <input value="Borrar" id="borrar" class="btn btn-warning text-white" type="button"
+                                        onclick="borrar();">
                                 </div>
                             </div>
                             <div class="col-6 container-fluid">
